@@ -25,7 +25,7 @@ eval("const View = __webpack_require__(/*! ./ttt-view */ \"./src/ttt-view.js\");
   \*************************/
 /***/ ((module) => {
 
-eval("class View {\n  \n  constructor(game, el) {\n    this.game = game;\n    this.el = el;\n    this.setupBoard();\n  }\n\n  setupBoard() {\n    const gridUl = document.createElement('ul')\n    \n    gridUl.className = \"grid\"\n    \n    for (let i = 0; i < 3; i++) {\n      for (let j = 0; j < 3; j++) {\n        const gridLi = document.createElement('li')\n        const pos = [i, j]\n        gridLi.setAttribute('data-grid-pos', `[${pos}]`)\n        gridUl.appendChild(gridLi)\n      }\n    }\n    that.el.appendChild(gridUl)\n    console.log(gridUl)\n  }\n  \n  bindEvents() {}\n\n  handleClick(e) {}\n\n  makeMove(square) {}\n\n}\n\nmodule.exports = View;\n\n\n//# sourceURL=webpack://TicTacToe_in_Broswer/./src/ttt-view.js?");
+eval("class View {\n  \n  constructor(game, el) {\n    this.game = game;\n    this.el = el;\n    this.setupBoard();\n  }\n\n  setupBoard() {\n    const gridUl = document.createElement('ul')\n    \n    gridUl.className = \"grid\"\n    \n    for (let i = 0; i < 3; i++) {\n      for (let j = 0; j < 3; j++) {\n        const gridLi = document.createElement('li')\n        const pos = [i, j]\n        gridLi.setAttribute('data-grid-pos', `[${pos}]`)\n        gridUl.appendChild(gridLi)\n      }\n    }\n    this.el.appendChild(gridUl)\n    console.log(gridUl)\n  }\n  \n  bindEvents() {}\n\n  handleClick(e) {}\n\n  makeMove(square) {}\n\n}\n\nmodule.exports = View;\n\n\n//# sourceURL=webpack://TicTacToe_in_Broswer/./src/ttt-view.js?");
 
 /***/ }),
 

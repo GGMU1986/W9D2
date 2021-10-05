@@ -19,7 +19,7 @@ class View {
         gridUl.appendChild(gridLi)
       }
     }
-    that.el.appendChild(gridUl)
+    this.el.appendChild(gridUl)
     console.log(gridUl)
   }
   
