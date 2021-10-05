@@ -1,7 +1,9 @@
 class View {
   constructor(game, el) {}
 
-  setupBoard() {}
+  setupBoard() {
+    
+  }
   
   bindEvents() {}
 
