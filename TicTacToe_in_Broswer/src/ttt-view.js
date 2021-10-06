@@ -2,25 +2,25 @@ class View {
   
   constructor(game, el) {
     this.game = game;
-    this.el = el;
-    this.setupBoard();
+    //this.el = el;
+    this.setupBoard(el);
   }
 
-  setupBoard() {
-    const gridUl = document.createElement('ul')
+  setupBoard(el) {
+    const gridUl = document.createElement('UL')
     
-    gridUl.className = "grid"
+    gridUl.classList.add('grid')
     
     for (let i = 0; i < 3; i++) {
       for (let j = 0; j < 3; j++) {
-        const gridLi = document.createElement('li')
-        const pos = [i, j]
-        gridLi.setAttribute('data-grid-pos', `[${pos}]`)
-        gridUl.appendChild(gridLi)
-      }
+        const gridLi = document.createElement('LI');
+        
+        gridLi.id = [i, j];
+        gridUl.appendChild(gridLi);
+        el.appendChild(gridUl);
+
+      };
     }
-    this.el.appendChild(gridUl)
-    console.log(gridUl)
   }
   
   bindEvents() {}

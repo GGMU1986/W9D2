@@ -1,13 +1,15 @@
 .grid {
     display: flex;
-    width: 500px;
+    width: 400px;
+    height: 400px;
     flex-wrap: wrap;
 }
 
 .grid li {
-    width: 150px;
+    width: 100px;
     border: 10px solid black;
     background-color: gray;
+    list-style: none;
 }
 
 .grid li:hover {
